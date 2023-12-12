@@ -24,7 +24,7 @@ poly_reg = PolynomialFeatures(degree=4)
 X_poly = poly_reg.fit_transform(X)
 lin_reg_2 = LinearRegression().fit(X_poly, y)
 
-# Visualize the linear regression results (Linear regression is not well adapted to the2 results, this results in an ineffective model.)
+# Visualize the linear regression results (Linear regression is not well adapted to the results, this results in an ineffective model.)
 # plt.scatter(X, y, color='red' )
 # plt.plot(X, lin_reg.predict(X), color='blue')
 # plt.title('Compare Salary vs Level (Linear Regression)')
