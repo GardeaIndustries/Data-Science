@@ -35,7 +35,7 @@ np.concatenate((y_pred_test.reshape(len(y_pred_test), 1), y_test.reshape(len(y_t
 confusion_matrix(y_test, y_pred_test)
 accuracy_score(y_test, y_pred_test)
 
-# Visualising the Training set results
+# Visualizing the Training set results
 from matplotlib.colors import ListedColormap
 X_set, y_set = sc.inverse_transform(X_train), y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 10, stop = X_set[:, 0].max() + 10, step = 0.25),
@@ -52,7 +52,7 @@ plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
 
-# Visualising the Test set results
+# Visualizing the Test set results
 from matplotlib.colors import ListedColormap
 X_set, y_set = sc.inverse_transform(X_test), y_test
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 10, stop = X_set[:, 0].max() + 10, step = 0.25),
