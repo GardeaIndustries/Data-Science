@@ -17,7 +17,7 @@ regressor =RandomForestRegressor(max_depth=2, n_estimators=10, random_state=0).f
 # Predicting a new result
 regressor.predict([[6.5]])
 
-# Visualizd the Random Forest Regression results (higher resolution)
+# Visualize the Random Forest Regression results (higher resolution)
 X_grid = np.arange(min(X), max(X), 0.1)
 X_grid = X_grid.reshape((len(X_grid), 1))
 plt.scatter(X, y, color = 'red')
